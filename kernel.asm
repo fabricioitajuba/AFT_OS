@@ -44,8 +44,8 @@ tam_dsp_address equ $- dsp_address
 n_caracteres resb 1	;conta o número de caracteres
 
 ;Buffer
-bufferv resb 50    	;Buffer de vídeo
-buffert resb 50    	;Buffer do teclado
+bufferv: resb 50    	;Buffer de vídeo
+buffert: resb 50    	;Buffer do teclado
 num: resw 1
 
 config:
@@ -288,7 +288,8 @@ cursor_disable:
 	ret
 
 ;------------------------------------------------
-; Read string
+; String Read
+; Lê uma string digitada pelo teclado
 ; di = Buffer da string
 ;------------------------------------------------
 string_read:
@@ -426,6 +427,7 @@ string_hexa_fim:
 ;         si o ponteiro da string
 ;-------------------------------------------------------------
 hexa_string:  
+
 	push ax   
     push bx
     push cx
@@ -472,6 +474,7 @@ loop2:
     pop cx
     pop bx
 	pop ax
+
     ret
 
 ;#################################################
@@ -786,8 +789,8 @@ cmd_address:
 	call string_print
 
 	;lê o endereço 2 bytes
-    mov di, buffert
-    call string_read
+	mov di, buffert
+	call string_read
 
 	;espaço
 	mov ah, 0eh
@@ -802,7 +805,7 @@ cmd_address:
 	;carrega o dado no endereço
 	mov bx, [num]
 	mov al, [bx]
-
+	
 	;converte o dado para string
 	mov dx, 1
 	mov si, bufferv
@@ -818,5 +821,4 @@ cmd_address:
 	jmp inicio
 
 ;-------------------------------------------------
-times 2046 - ($-$$) db 0
-dw 0xAA55
+times 2048 - ($-$$) db 0
