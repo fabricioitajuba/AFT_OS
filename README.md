@@ -61,8 +61,7 @@ sudo apt install nasm
 sudo apt install genisoimage
 
 ### - Para a máquina virtual:
-sudo apt-get install qemu-system
-sudo apt-get install qemu-user-static
+sudo apt-get install qemu-system e sudo apt-get install qemu-user-static
 
 ### - Para abri arquivos binários:
 sudo apt-get install jeex
