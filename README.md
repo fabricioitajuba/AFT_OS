@@ -33,6 +33,10 @@ Limpa a tela.
 Mostra a hora atual.
 
 
+### crono
+
+Mostra a hora atual, atualizando enquanto uma tecla não for pressionada.
+
 ### date
 
 Mostra a data atual.
