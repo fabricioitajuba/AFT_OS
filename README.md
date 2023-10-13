@@ -55,7 +55,7 @@ Verifica uma posição de memória.
 ### no Linux:
 
 - Para o assembly:
-sudo apt install nasm
+**sudo apt install nasm**
 
 - Para gerar iso:
 sudo apt install genisoimage
