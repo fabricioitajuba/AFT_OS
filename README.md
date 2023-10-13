@@ -54,15 +54,15 @@ Verifica uma posição de memória.
 ### Caso deseja alterar o sistema, instalar os seguintes pacotes:
 ### no Linux:
 
-- Para o assembly:
+### - Para o assembly:
 **sudo apt install nasm**
 
 - Para gerar iso:
-sudo apt install genisoimage
+**sudo apt install genisoimage**
 
 - Para a máquina virtual:
-sudo apt-get install qemu-system
-sudo apt-get install qemu-user-static
+**sudo apt-get install qemu-system**
+**sudo apt-get install qemu-user-static**
 
 - Para abri arquivos binários:
-sudo apt-get install jeex
+**sudo apt-get install jeex**
