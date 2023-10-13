@@ -1,6 +1,8 @@
 # AFT_OS
-Simples sistema operacional versão 0.1
+# Simples sistema operacional versão 0.1
 
-Início: 10/10/2023
+![](imagens/img01.PNG)
+
+## Início: 10/10/2023
 
 Comandos:
