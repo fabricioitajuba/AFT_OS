@@ -3,7 +3,8 @@
 
 ![](https://github.com/fabricioitajuba/AFT_OS/blob/main/imagens/img01.png)
 
-## Início: 10/10/2023
+### Início: 10/10/2023
+### Última atualização: 13/10/2023
 
 ### Comandos:
 
