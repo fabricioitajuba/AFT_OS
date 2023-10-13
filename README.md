@@ -51,18 +51,18 @@ Reinicia o sistema.
 Verifica uma posição de memória.
 
 
-### Caso deseja alterar o sistema, instalar os seguintes pacotes:
+## Caso deseja alterar o sistema, instalar os seguintes pacotes:
 ### no Linux:
 
 ### - Para o assembly:
-**sudo apt install nasm**
+sudo apt install nasm
 
-- Para gerar iso:
-**sudo apt install genisoimage**
+### - Para gerar iso:
+sudo apt install genisoimage
 
-- Para a máquina virtual:
-**sudo apt-get install qemu-system**
-**sudo apt-get install qemu-user-static**
+### - Para a máquina virtual:
+sudo apt-get install qemu-system
+sudo apt-get install qemu-user-static
 
-- Para abri arquivos binários:
-**sudo apt-get install jeex**
+### - Para abri arquivos binários:
+sudo apt-get install jeex
