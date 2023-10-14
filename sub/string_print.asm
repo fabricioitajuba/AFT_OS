@@ -4,6 +4,8 @@
 ;------------------------------------------------
 string_print:
 
+	call colorfont ;////////////teste
+
 	push ax
 	push bx
 	push si
@@ -26,6 +28,8 @@ string_print_end:
 	pop si
 	pop bx
 	pop ax
+
+	call colorfont ;////////////teste
 
 	ret
 

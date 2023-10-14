@@ -8,7 +8,7 @@ colorfont:
     mov al, ' '
 	mov bh, 00h
 	mov bl, [color]
-	mov cx, 2000
+	mov cx, 2080
 	int 10h
 
     pop cx

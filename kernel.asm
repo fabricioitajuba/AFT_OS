@@ -14,7 +14,24 @@ msg1 db "AFT_OS, versao 0.1 - 10/10/2023", 10, 13, 0
 dsp_cursor db '>> ', 0
 dsp_cmd_invalido db 10, 13, 'Comando invalido! ', 10, 13, 0
 tec_exit db 10, 13, 'Pressione qualquer tecla para sair! ', 10, 13, 0
-_dsp_fontcolor db 10, 13, 'Selecione uma cor:', 10, 13, '1 - Azul', 10, 13, '2 - Vermelho', 10, 13, 0
+_dsp_fontcolor db 10, 13, 'Selecione uma cor:', 0 
+fontec1 db 10, 13, '1 - Azul escuro', 0 
+fontec2 db 10, 13, '2 - Verde escuro', 0
+fontec3 db 10, 13, '3 - Cian escuro', 0 
+fontec4 db 10, 13, '4 - Vermelho escuro', 0 
+fontec5 db 10, 13, '5 - Magenta escuro', 0 
+fontec6 db 10, 13, '6 - Amarelo escuro', 0 
+fontec7 db 10, 13, '7 - Brannco escuro', 0 
+fontec8 db 10, 13, '8 - Cinza escuro', 0 
+fontec9 db 10, 13, '9 - Azul claro', 0 
+fontec10 db 10, 13, 'A - Verde claro', 0 
+fontec11 db 10, 13, 'B - Cian claro', 0 
+fontec12 db 10, 13, 'C - Vermelho claro', 0 
+fontec13 db 10, 13, 'D - Magenta claro', 0 
+fontec14 db 10, 13, 'E - Amarelo claro', 0 
+fontec15 db 10, 13, 'F - Branco claro', 0
+fontecNDA db 10, 13, '16 - Nenhuma das opcoes anteriores', 10, 13, 0
+
 _dsp_address: db 10, 13, "Address: ", 0
 
 ;comandos
@@ -47,7 +64,8 @@ tam_dsp_fontcolor equ $- dsp_fontcolor
 
 n_caracteres resb 1	;conta o número de caracteres
 
-color db 7
+color db 10
+
 
 ;Buffers
 bufferv: resb 50    	;Buffer de vídeo
