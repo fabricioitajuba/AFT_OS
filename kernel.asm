@@ -47,6 +47,8 @@ tam_dsp_fontcolor equ $- dsp_fontcolor
 
 n_caracteres resb 1	;conta o número de caracteres
 
+color db 7
+
 ;Buffers
 bufferv: resb 50    	;Buffer de vídeo
 buffert: resb 50    	;Buffer do teclado
@@ -59,11 +61,13 @@ config:
 	mov al, 03h         	;modo texto 80x25 colorido
 	int 10h
 
-	mov ah, 05h		;Select Active Display Page
-	mov al, 00h		;página 0
-	int 10h
+	;mov ah, 05h		;Select Active Display Page
+	;mov al, 00h		;página 0
+	;int 10h
 
-	;Boot e Kernell carregados!
+    call colorfont
+
+ 	;Boot e Kernell carregados!
 	mov si, msg1        
 	call string_print
 
@@ -202,6 +206,7 @@ __cmd_invalido:
 ;#################################################
 
 %include "./sub/string_print.asm"
+%include "./sub/colorfont.asm"
 %include "./sub/delay.asm"
 %include "./sub/cursor.asm"
 %include "./sub/string_read.asm"

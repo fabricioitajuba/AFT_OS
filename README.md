@@ -4,7 +4,7 @@
 ![](https://github.com/fabricioitajuba/AFT_OS/blob/main/imagens/img01.png)
 
 ### Início: 10/10/2023
-### Última atualização: 13/10/2023
+### Última atualização: 14/10/2023
 
 ### Comandos:
 
@@ -50,6 +50,9 @@ Reinicia o sistema.
 ### address
 Verifica uma posição de memória.
 
+
+### fontcolor
+Altera a cor da fonte
 
 ## Caso deseja alterar o sistema, instalar os seguintes pacotes:
 ### no Linux:
