@@ -62,9 +62,9 @@ tam_dsp_address equ $- dsp_address
 dsp_fontcolor db 'fontcolor', 0
 tam_dsp_fontcolor equ $- dsp_fontcolor
 
-n_caracteres resb 1	;conta o número de caracteres
+n_caracteres resb 1	    ;conta o número de caracteres
 
-color db 10
+color db 10             ;cor da fonte
 
 
 ;Buffers
